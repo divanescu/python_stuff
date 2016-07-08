@@ -13,10 +13,11 @@ def middle(lst):
     new = lst
     print "Middle:", new 
 
-lst1=[0,1,2,3,4,5]
-print "Original:", lst1
-chop(lst1)
-print "Chopped:", lst1
-lst2 = [0,1,2,3,4,5]
+lst=[0,1,2,3,4,5]
+print "Original:", lst
+orig = lst[:]
+chop(lst)
+print "Chopped:", lst
+lst2 = orig
 middle(lst2)
 
